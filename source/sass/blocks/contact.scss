@@ -114,6 +114,7 @@
   cursor: default;
   pointer-events: none;
   color: hsla(214, 97%, 13%, 0.3);
+  outline: none;
 
   &[href] {
     cursor: pointer;

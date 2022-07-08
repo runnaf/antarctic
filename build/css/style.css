@@ -1467,6 +1467,7 @@ button,
   cursor: default;
   pointer-events: none;
   color: rgba(1, 29, 65, 0.3);
+  outline: none;
 }
 
 .contact a[href] {
