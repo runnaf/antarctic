@@ -175,6 +175,13 @@
   background-color: $color-light;
   border: none;
 
+  &:hover::placeholder,
+  &:focus-visible::placeholder,
+  &:hover,
+  &:focus-visible {
+    color: rgba(1, 28, 64, 0.3);
+  }
+
   &:last-of-type {
     margin-bottom: 22px;
 
@@ -283,6 +290,13 @@
   color: hsla(210, 50%, 98%, 0.5);
 }
 
+.reservation__checkbox-container input[type="checkbox"]:hover + label,
+.reservation__checkbox-container input[type="checkbox"]:focus-visible + label {
+  &::after {
+    background-color: $color-backgroundlight;
+  }
+}
+
 .reservation button {
   width: 100%;
   min-height: 43px;
@@ -309,4 +323,3 @@
     pointer-events: none;
   }
 }
-

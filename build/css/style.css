@@ -645,142 +645,6 @@ button,
   line-height: 1.5;
 }
 
-.btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 10px 0;
-  padding: 10px 20px;
-  color: #ffffff;
-  background-color: #2c39f2;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-}
-
-.btn--red {
-  background-color: #ff1553;
-}
-
-.btn:disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  pointer-events: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.modal::-webkit-scrollbar {
-  display: none;
-}
-
-.modal__wrapper {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  min-height: 100%;
-  padding: 60px 40px;
-}
-
-.modal__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.modal__content {
-  position: relative;
-  width: 600px;
-  padding: 40px;
-  background-color: #ffffff;
-}
-
-.modal__close-btn {
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  z-index: 1;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  background: rgba(255, 255, 255, 0);
-  border: none;
-  cursor: pointer;
-}
-
-.modal--responsive .modal__content {
-  width: 100%;
-}
-
-.modal--fit-content .modal__content {
-  width: auto;
-}
-
-.modal--no-scale {
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-}
-
-.modal--preload {
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-
-.modal.is-active {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-}
-
 .page-header {
   max-width: 1366px;
   margin-left: auto;
@@ -862,6 +726,7 @@ button,
   align-items: center;
   cursor: default;
   pointer-events: none;
+  outline: none;
 }
 
 .page-header a[href] {
@@ -1237,15 +1102,22 @@ button,
   background-color: #f9fbfd;
 }
 
+.upcoming-cruises__reverse a:hover,
+.upcoming-cruises__reverse a:focus-visible {
+  color: rgba(1, 29, 65, 0.5);
+}
+
 .upcoming-cruises__link-container {
   margin-top: auto;
 }
 
-.upcoming-cruises li:hover .upcoming-cruises__front {
+.upcoming-cruises li:hover .upcoming-cruises__front,
+.upcoming-cruises li:focus .upcoming-cruises__front {
   display: none;
 }
 
-.upcoming-cruises li:hover .upcoming-cruises__reverse {
+.upcoming-cruises li:hover .upcoming-cruises__reverse,
+.upcoming-cruises li:focus .upcoming-cruises__reverse {
   display: -ms-grid;
   display: grid;
 }
@@ -1346,6 +1218,41 @@ button,
   margin-bottom: 20px;
   background-color: #f9fbfd;
   border: none;
+}
+
+.reservation input:hover::-webkit-input-placeholder,
+.reservation input:focus-visible::-webkit-input-placeholder,
+.reservation input:hover,
+.reservation input:focus-visible {
+  color: rgba(1, 28, 64, 0.3);
+}
+
+.reservation input:hover::-moz-placeholder,
+.reservation input:focus-visible::-moz-placeholder,
+.reservation input:hover,
+.reservation input:focus-visible {
+  color: rgba(1, 28, 64, 0.3);
+}
+
+.reservation input:hover:-ms-input-placeholder,
+.reservation input:focus-visible:-ms-input-placeholder,
+.reservation input:hover,
+.reservation input:focus-visible {
+  color: rgba(1, 28, 64, 0.3);
+}
+
+.reservation input:hover::-ms-input-placeholder,
+.reservation input:focus-visible::-ms-input-placeholder,
+.reservation input:hover,
+.reservation input:focus-visible {
+  color: rgba(1, 28, 64, 0.3);
+}
+
+.reservation input:hover::placeholder,
+.reservation input:focus-visible::placeholder,
+.reservation input:hover,
+.reservation input:focus-visible {
+  color: rgba(1, 28, 64, 0.3);
 }
 
 .reservation input:last-of-type {
@@ -1451,6 +1358,11 @@ button,
 
 .reservation__checkbox-container input[type="checkbox"]:hover + label {
   color: rgba(247, 250, 252, 0.5);
+}
+
+.reservation__checkbox-container input[type="checkbox"]:hover + label::after,
+.reservation__checkbox-container input[type="checkbox"]:focus-visible + label::after {
+  background-color: #bedafa;
 }
 
 .reservation button {
@@ -1730,13 +1642,6 @@ button,
     color: $color-default-white;
   }
 } */
-
-@media (hover: hover), screen and (min-width: 0\0) {
-  .btn:hover,
-  .btn:focus {
-    opacity: 0.8;
-  }
-}
 
 @media (max-width: 1365px) {
   .container {
@@ -2086,19 +1991,6 @@ button,
     padding: 65px 4.7%;
   }
 
-  .modal__wrapper {
-    padding: 60px 16px;
-  }
-
-  .modal__content {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .modal--fit-content .modal__content {
-    width: 100%;
-  }
-
   .page-header {
     padding: 0;
     background-color: #023269;
@@ -2221,6 +2113,13 @@ button,
     box-shadow: 0 5px 0 0 #f9fbfd, 0 -5px 0 0 #f9fbfd;
   }
 
+  .page-header.is-js button:hover::after,
+  .page-header.is-js button:focus-visible::after {
+    background-color: rgba(247, 250, 252, 0.5);
+    -webkit-box-shadow: 0 5px 0 0 rgba(247, 250, 252, 0.5), 0 -5px 0 0 rgba(247, 250, 252, 0.5);
+    box-shadow: 0 5px 0 0 rgba(247, 250, 252, 0.5), 0 -5px 0 0 rgba(247, 250, 252, 0.5);
+  }
+
   .page-header.is-active {
     position: absolute;
     width: 100%;
@@ -2251,6 +2150,15 @@ button,
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
+  }
+
+  .page-header.is-active button:hover::after,
+  .page-header.is-active button:focus-visible::after,
+  .page-header.is-active button:hover::before,
+  .page-header.is-active button:focus-visible::before {
+    background-color: rgba(1, 29, 65, 0.5);
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 
   .page-header.is-active .page-header__nav {

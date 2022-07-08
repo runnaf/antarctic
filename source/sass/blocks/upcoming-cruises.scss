@@ -169,20 +169,22 @@
   font-size: 14px;
   background-color: $color-light;
 
-  // @include vp-1365 {
-
-  // }
+  &:hover,
+  &:focus-visible {
+    color: hsla(214, 97%, 13%, 0.5);
+  }
 }
 
 .upcoming-cruises__link-container {
   margin-top: auto;
 }
 
-.upcoming-cruises li:hover .upcoming-cruises__front {
+.upcoming-cruises li:hover .upcoming-cruises__front,
+.upcoming-cruises li:focus .upcoming-cruises__front {
   display: none;
 }
 
-.upcoming-cruises li:hover .upcoming-cruises__reverse {
+.upcoming-cruises li:hover .upcoming-cruises__reverse,
+.upcoming-cruises li:focus .upcoming-cruises__reverse {
   display: grid;
 }
-
