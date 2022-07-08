@@ -1,0 +1,190 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include vp-1365 {
+    padding-top: 101px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    padding-top: 58px;
+    padding-bottom: 65px;
+  }
+}
+
+.contact__container {
+  flex: 1;
+
+  @include vp-1365 {
+    margin-bottom: 3px;
+    margin-left: 30px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    margin-bottom: 36px;
+  }
+}
+
+.contact__container p br {
+  display: none;
+
+  @include vp-1365 {
+    display: inline;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.contact__container p {
+  @include vp-767 {
+    width: 95%;
+  }
+}
+
+.contact__container a br {
+  display: none;
+
+  @include vp-1365 {
+    display: inline;
+  }
+}
+
+.contact__map {
+  margin-right: 100px;
+  order: -1;
+
+  @include vp-1365 {
+    margin: 0;
+    flex: 1;
+    // min-width: 324px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    order: 1;
+    margin: 0;
+  }
+}
+
+.contact p {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 31px;
+
+  @include vp-1365 {
+    margin-bottom: 26px;
+  }
+}
+
+.contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include vp-767 {
+    padding-left: 1px;
+  }
+}
+
+.contact li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include vp-1365 {
+    align-items: start;
+  }
+}
+
+.contact a {
+  margin-left: 10px;
+  width: 100%;
+  order: 1;
+  cursor: default;
+  pointer-events: none;
+  color: hsla(214, 97%, 13%, 0.3);
+
+  &[href] {
+    cursor: pointer;
+    pointer-events: auto;
+    color: $color-dark;
+
+    &:hover,
+    &:focus-visible {
+      color: hsla(214, 97%, 13%, 0.5);
+    }
+  }
+}
+
+.contact svg {
+  @include vp-1365 {
+    margin-top: 5px;
+  }
+}
+
+.contact a + svg {
+  fill: hsla(214, 97%, 13%, 0.3);
+}
+
+.contact a[href] + svg {
+  fill: $color-dark;
+}
+
+.contact a[href]:hover + svg,
+.contact a[href]:focus-visible + svg {
+  fill: hsla(214, 97%, 13%, 0.5);
+}
+
+.contact__map img {
+  display: block;
+  width: 560px;
+  height: 306px;
+
+  @include vp-1365 {
+    width: 324px;
+    height: 335px;
+    object-fit: cover;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    height: 316px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.contact__map iframe {
+  border: none;
+  display: none;
+  width: 560px;
+  height: 306px;
+
+  @include vp-1365 {
+    width: 100%;
+    height: 335px;
+  }
+
+  @include vp-767 {
+    height: 316px;
+  }
+}
+
+.contact__map.is-js img {
+  display: none;
+}
+
+.contact__map.is-js iframe {
+  display: block;
+}

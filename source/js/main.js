@@ -1,9 +1,29 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {getMap} from './modules/map';
+import {openingMenu} from './modules/menu';
+// import {scrolling} from './modules/scroll';
+import {storingFormData} from './modules/form-data';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
+
+  // Map
+
+  getMap();
+
+  // Menu
+
+  openingMenu();
+
+  // Scroll
+
+  // scrolling();
+
+  // Form Data
+
+  storingFormData();
 
   // Utils
   // ---------------------------------
