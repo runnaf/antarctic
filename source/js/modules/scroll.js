@@ -9,9 +9,11 @@ function scrolling() {
   });
 
   const triggers = document.querySelectorAll('[data-link-menu]');
-  triggers.forEach((trigger)=>{
-    moveTo.registerTrigger(trigger);
-  });
+  if (triggers.length > 0) {
+    triggers.forEach((trigger)=>{
+      moveTo.registerTrigger(trigger);
+    });
+  }
 }
 
 export {scrolling};
