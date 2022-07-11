@@ -1,6 +1,6 @@
 import {getMap} from './modules/map';
 import {openingMenu} from './modules/menu';
-import {scrolling} from './modules/scroll';
+// import {scrolling} from './modules/scroll';
 import {storingFormData} from './modules/form-data';
 
 // ---------------------------------
@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Scroll
 
-  scrolling();
+  // scrolling();
 
   // Form Data
 
