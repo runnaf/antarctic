@@ -10,6 +10,11 @@
     <link rel="preload" type="font/woff2" crossorigin="anonymous" href="/fonts/Montserrat-Regular.woff2" as="font">
     <link rel="preload" type="font/woff2" crossorigin="anonymous" href="/fonts/Montserrat-Medium.woff2" as="font">
     <link rel="preload" type="font/woff2" crossorigin="anonymous" href="/fonts/Montserrat-SemiBold.woff2" as="font">
+    <link rel="icon" href="favicon/favicon32.ico"> <!-- 32×32 -->
+    <link rel="icon" href="favicon/favicon16.ico"> <!-- 16×16 -->
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -38,16 +43,16 @@
         <nav class="page-header__nav">
           <ul>
             <li>
-              <a href="#advantages" class="js-trigger" data-link-menu="#advantages">Преимущества</a>
+              <a href="#advantages" data-link-menu="#advantages">Преимущества</a>
             </li>
             <li>
-              <a href="#destinations" class="js-trigger" data-link-menu="#destinations">Направления</a>
+              <a href="#destinations" data-link-menu="#destinations">Направления</a>
             </li>
             <li>
-              <a href="#upcoming-cruises" class="js-trigger" data-link-menu="#upcoming-cruises">Ближайшие круизы</a>
+              <a href="#upcoming-cruises" data-link-menu="#upcoming-cruises">Ближайшие круизы</a>
             </li>
             <li>
-              <a href="#contact" class="js-trigger" data-link-menu="#contact">Контакты</a>
+              <a href="#contact" data-link-menu="#contact">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -61,9 +66,9 @@
         </div>
         <div class="top__image">
           <picture>
-            <source media="max-width: 767px" srcset="./img/content/top_mobile.webp 1x, ./img/content/top_mobile@2x.webp 2x" type="image/webp">
-            <source media="max-width: 1365px" srcset="./img/content/top_tablet.webp 1x, ./img/content/top_tablet@2x.webp 2x" type="image/webp">
-            <source media="min-width: 1366px" srcset="./img/content/top_desktop.webp 1x, ./img/content/top_desktop@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)" srcset="./img/content/top_mobile.webp 1x, ./img/content/top_mobile@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 1365px)" srcset="./img/content/top_tablet.webp 1x, ./img/content/top_tablet@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1366px)" srcset="./img/content/top_desktop.webp 1x, ./img/content/top_desktop@2x.webp 2x" type="image/webp">
             <!-- 1х: 1366px; 2x: 2732px -->
             <img src="./img/content/top_desktop.jpg" srcset="./img/content/top_desktop@2x.jpg 2x" alt="горы и море Антарктики" width="1366" height="650">
           </picture>
@@ -76,9 +81,9 @@
         </div>
         <div class="promo__wrapper-image">
           <picture>
-            <source media="max-width: 767px" srcset="./img/content/promo_mobile.webp 1x, ./img/content/promo_mobile@2x.webp 2x" type="image/webp">
-            <source media="max-width: 1365px" srcset="./img/content/promo_tablet.webp 1x, ./img/content/promo_tablet@2x.webp 2x" type="image/webp">
-            <source media="min-width: 1366px" srcset="./img/content/promo_desktop.webp 1x, ./img/content/promo_desktop@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)" srcset="./img/content/promo_mobile.webp 1x, ./img/content/promo_mobile@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 1365px)" srcset="./img/content/promo_tablet.webp 1x, ./img/content/promo_tablet@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1366px)" srcset="./img/content/promo_desktop.webp 1x, ./img/content/promo_desktop@2x.webp 2x" type="image/webp">
             <!-- 1х: 560px; 2x: 1120px -->
             <img src="./img/content/promo_desktop.jpg" srcset="./img/content/promo_desktop@2x.jpg 2x" alt="Три пингвина" width="560" height="301">
           </picture>
@@ -119,9 +124,9 @@
         </div>
         <div class="advantages__image">
           <picture>
-            <source media="max-width: 767px" srcset="./img/content/advantages_mobile.webp 1x, ./img/content/advantages_mobile@2x.webp 2x" type="image/webp">
-            <source media="max-width: 1365px" srcset="./img/content/advantages_tablet.webp 1x, ./img/content/advantages_tablet@2x.webp 2x" type="image/webp">
-            <source media="min-width: 1366px" srcset="./img/content/advantages_desktop.webp 1x, ./img/content/advantages_desktop@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)" srcset="./img/content/advantages_mobile.webp 1x, ./img/content/advantages_mobile@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 1365px)" srcset="./img/content/advantages_tablet.webp 1x, ./img/content/advantages_tablet@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1366px)" srcset="./img/content/advantages_desktop.webp 1x, ./img/content/advantages_desktop@2x.webp 2x" type="image/webp">
             <!-- 1х: 1366px; 2x: 2732px -->
             <img src="./img/content/advantages_desktop.jpg" srcset="./img/content/advantages_desktop@2x.jpg 2x" alt="горы и море Антарктики фон" width="1366" height="562">
           </picture>
@@ -134,9 +139,9 @@
             <div class="upcoming-cruises__front">
               <h3>Круиз "Астория"</h3>
               <picture>
-                <source media="max-width: 767px" srcset="./img/content/astoria_mobile.webp 1x, ./img/content/astoria_mobile@2x.webp 2x" type="image/webp">
-                <source media="max-width: 1365px" srcset="./img/content/astoria_tablet.webp 1x, ./img/content/astoria_tablet@2x.webp 2x" type="image/webp">
-                <source media="min-width: 1366px" srcset="./img/content/astoria_desktop.webp 1x, ./img/content/astoria_desktop@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 767px)" srcset="./img/content/astoria_mobile.webp 1x, ./img/content/astoria_mobile@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 1365px)" srcset="./img/content/astoria_tablet.webp 1x, ./img/content/astoria_tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1366px)" srcset="./img/content/astoria_desktop.webp 1x, ./img/content/astoria_desktop@2x.webp 2x" type="image/webp">
                 <!-- 1х: 260px; 2x: 520px -->
                 <img src="./img/content/astoria_desktop.jpg" srcset="./img/content/astoria_desktop@2x.jpg 2x" alt="горы и замерзшее море" width="260" height="386">
               </picture>
@@ -156,13 +161,13 @@
               <a href="#">Забронировать</a>
             </div>
           </li>
-          <li class="upcoming-cruises__item upcoming-cruises__item--current" tabindex="0">
+          <li class="upcoming-cruises__item is-active" tabindex="0"> <!--is-active - класс открытой карточки круиза-->
             <div class="upcoming-cruises__front">
               <h3>Круиз “Элайн”</h3>
               <picture>
-                <source media="max-width: 767px" srcset="./img/content/astoria_mobile.webp 1x, ./img/content/astoria_mobile@2x.webp 2x" type="image/webp">
-                <source media="max-width: 1365px" srcset="./img/content/astoria_tablet.webp 1x, ./img/content/astoria_tablet@2x.webp 2x" type="image/webp">
-                <source media="min-width: 1366px" srcset="./img/content/astoria_desktop.webp 1x, ./img/content/astoria_desktop@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 767px)" srcset="./img/content/astoria_mobile.webp 1x, ./img/content/astoria_mobile@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 1365px)" srcset="./img/content/astoria_tablet.webp 1x, ./img/content/astoria_tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1366px)" srcset="./img/content/astoria_desktop.webp 1x, ./img/content/astoria_desktop@2x.webp 2x" type="image/webp">
                 <!-- 1х: 260px; 2x: 520px -->
                 <img src="./img/content/astoria_desktop.jpg" srcset="./img/content/astoria_desktop@2x.jpg 2x" alt="горы и замерзшее море" width="260" height="386">
               </picture>
@@ -186,9 +191,9 @@
             <div class="upcoming-cruises__front">
               <h3>Круиз "Атлантис"</h3>
               <picture>
-                <source media="max-width: 767px" srcset="./img/content/atlantic_mobile.webp 1x, ./img/content/atlantic_mobile@2x.webp 2x" type="image/webp">
-                <source media="max-width: 1365px" srcset="./img/content/atlantic_tablet.webp 1x, ./img/content/atlantic_tablet@2x.webp 2x" type="image/webp">
-                <source media="min-width: 1366px" srcset="./img/content/atlantic_desktop.webp 1x, ./img/content/atlantic_desktop@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 767px)" srcset="./img/content/atlantic_mobile.webp 1x, ./img/content/atlantic_mobile@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 1365px)" srcset="./img/content/atlantic_tablet.webp 1x, ./img/content/atlantic_tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1366px)" srcset="./img/content/atlantic_desktop.webp 1x, ./img/content/atlantic_desktop@2x.webp 2x" type="image/webp">
                 <!-- 1х: 260px; 2x: 520px -->
                 <img src="./img/content/atlantic_desktop.jpg" srcset="./img/content/atlantic_desktop@2x.jpg 2x" alt="айсберги" width="260" height="386">
               </picture>
@@ -212,9 +217,9 @@
             <div class="upcoming-cruises__front">
               <h3>Круиз "Одиссей"</h3>
               <picture>
-                <source media="max-width: 767px" srcset="./img/content/odissey_mobile.webp 1x, ./img/content/odissey_mobile@2x.webp 2x" type="image/webp">
-                <source media="max-width: 1365px" srcset="./img/content/odissey_tablet.webp 1x, ./img/content/odissey_tablet@2x.webp 2x" type="image/webp">
-                <source media="min-width: 1366px" srcset="./img/content/odissey_desktop.webp 1x, ./img/content/odissey_desktop@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 767px)" srcset="./img/content/odissey_mobile.webp 1x, ./img/content/odissey_mobile@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 1365px)" srcset="./img/content/odissey_tablet.webp 1x, ./img/content/odissey_tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1366px)" srcset="./img/content/odissey_desktop.webp 1x, ./img/content/odissey_desktop@2x.webp 2x" type="image/webp">
                 <!-- 1х: 260px; 2x: 520px -->
                 <img src="./img/content/odissey_desktop.jpg" srcset="./img/content/odissey_desktop@2x.jpg 2x" alt="горы и море" width="260" height="386">
               </picture>
@@ -238,9 +243,9 @@
             <div class="upcoming-cruises__front">
               <h3>Круиз "Олимпия"</h3>
               <picture>
-                <source media="max-width: 767px" srcset="./img/content/olimpia_mobile.webp 1x, ./img/content/olimpia_mobile@2x.webp 2x" type="image/webp">
-                <source media="max-width: 1365px" srcset="./img/content/olimpia_tablet.webp 1x, ./img/content/olimpia_tablet@2x.webp 2x" type="image/webp">
-                <source media="min-width: 1366px" srcset="./img/content/olimpia_desktop.webp 1x, ./img/content/olimpia_desktop@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 767px)" srcset="./img/content/olimpia_mobile.webp 1x, ./img/content/olimpia_mobile@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 1365px)" srcset="./img/content/olimpia_tablet.webp 1x, ./img/content/olimpia_tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1366px)" srcset="./img/content/olimpia_desktop.webp 1x, ./img/content/olimpia_desktop@2x.webp 2x" type="image/webp">
                 <!-- 1х: 260px; 2x: 520px -->
                 <img src="./img/content/olimpia_desktop.jpg" srcset="./img/content/olimpia_desktop@2x.jpg 2x" alt="пингвины на фоне гор" width="260" height="386">
               </picture>
@@ -264,9 +269,9 @@
             <div class="upcoming-cruises__front">
               <h3>Круиз "Аврора"</h3>
               <picture>
-                <source media="max-width: 767px" srcset="./img/content/avrora_mobile.webp 1x, ./img/content/avrora_mobile@2x.webp 2x" type="image/webp">
-                <source media="max-width: 1365px" srcset="./img/content/avrora_tablet.webp 1x, ./img/content/avrora_tablet@2x.webp 2x" type="image/webp">
-                <source media="min-width: 1366px" srcset="./img/content/avrora_desktop.webp 1x, ./img/content/avrora_desktop@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 767px)" srcset="./img/content/avrora_mobile.webp 1x, ./img/content/avrora_mobile@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 1365px)" srcset="./img/content/avrora_tablet.webp 1x, ./img/content/avrora_tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1366px)" srcset="./img/content/avrora_desktop.webp 1x, ./img/content/avrora_desktop@2x.webp 2x" type="image/webp">
                 <!-- 1х: 260px; 2x: 520px -->
                 <img src="./img/content/avrora_desktop.jpg" srcset="./img/content/avrora_desktop@2x.jpg 2x" alt="море с осколками айсбергов" width="260" height="386">
               </picture>
@@ -290,9 +295,9 @@
             <div class="upcoming-cruises__front">
               <h3>Круиз "Леонор"</h3>
               <picture>
-                <source media="max-width: 767px" srcset="./img/content/leonor_mobile.webp 1x, ./img/content/leonor_mobile@2x.webp 2x" type="image/webp">
-                <source media="max-width: 1365px" srcset="./img/content/leonor_tablet.webp 1x, ./img/content/leonor_tablet@2x.webp 2x" type="image/webp">
-                <source media="min-width: 1366px" srcset="./img/content/leonor_desktop.webp 1x, ./img/content/leonor_desktop@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 767px)" srcset="./img/content/leonor_mobile.webp 1x, ./img/content/leonor_mobile@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 1365px)" srcset="./img/content/leonor_tablet.webp 1x, ./img/content/leonor_tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1366px)" srcset="./img/content/leonor_desktop.webp 1x, ./img/content/leonor_desktop@2x.webp 2x" type="image/webp">
                 <!-- 1х: 260px; 2x: 520px -->
                 <img src="./img/content/leonor_desktop.jpg" srcset="./img/content/leonor_desktop@2x.jpg 2x" alt="катер в море" width="260" height="386">
               </picture>
@@ -316,9 +321,9 @@
             <div class="upcoming-cruises__front">
               <h3>Круиз "Минион - 1"</h3>
               <picture>
-                <source media="max-width: 767px" srcset="./img/content/minion_mobile.webp 1x, ./img/content/minion_mobile@2x.webp 2x" type="image/webp">
-                <source media="max-width: 1365px" srcset="./img/content/minion_tablet.webp 1x, ./img/content/minion_tablet@2x.webp 2x" type="image/webp">
-                <source media="min-width: 1366px" srcset="./img/content/minion_desktop.webp 1x, ./img/content/minion_desktop@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 767px)" srcset="./img/content/minion_mobile.webp 1x, ./img/content/minion_mobile@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 1365px)" srcset="./img/content/minion_tablet.webp 1x, ./img/content/minion_tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1366px)" srcset="./img/content/minion_desktop.webp 1x, ./img/content/minion_desktop@2x.webp 2x" type="image/webp">
                 <!-- 1х: 260px; 2x: 520px -->
                 <img src="./img/content/minion_desktop.jpg" srcset="./img/content/minion_desktop@2x.jpg 2x" alt="горы, море и экспедиция сошедшая с коробля" width="260" height="386">
               </picture>
@@ -365,9 +370,9 @@
         </div>
         <div class="reservation__container-image">
           <picture>
-            <source media="max-width: 767px" srcset="./img/content/reservation_mobile.webp 1x, ./img/content/reservation_mobile@2x.webp 2x" type="image/webp">
-            <source media="max-width: 1365px" srcset="./img/content/reservation_tablet.webp 1x, ./img/content/reservation_tablet@2x.webp 2x" type="image/webp">
-            <source media="min-width: 1366px" srcset="./img/content/reservation_desktop.webp 1x, ./img/content/reservation_desktop@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)" srcset="./img/content/reservation_mobile.webp 1x, ./img/content/reservation_mobile@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 1365px)" srcset="./img/content/reservation_tablet.webp 1x, ./img/content/reservation_tablet@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1366px)" srcset="./img/content/reservation_desktop.webp 1x, ./img/content/reservation_desktop@2x.webp 2x" type="image/webp">
             <!-- 1х: 1366px; 2x: 2732px -->
             <img src="./img/content/reservation_desktop.jpg" srcset="./img/content/reservation_desktop@2x.jpg 2x" alt="горы и замерзшее море" width="1366" height="555">
           </picture>
@@ -394,13 +399,13 @@
         </div>
         <div class="contact__map" data-map="map">
           <picture>
-            <source media="max-width: 767px" srcset="./img/content/map_mobile.webp 1x, ./img/content/map_mobile@2x.webp 2x" type="image/webp">
-            <source media="max-width: 1365px" srcset="./img/content/map_tablet.webp 1x, ./img/content/map_tablet@2x.webp 2x" type="image/webp">
-            <source media="min-width: 1366px" srcset="./img/content/map_desktop.webp 1x, ./img/content/map_desktop@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)" srcset="./img/content/map_mobile.webp 1x, ./img/content/map_mobile@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 1365px)" srcset="./img/content/map_tablet.webp 1x, ./img/content/map_tablet@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1366px)" srcset="./img/content/map_desktop.webp 1x, ./img/content/map_desktop@2x.webp 2x" type="image/webp">
             <!-- 1х: 560px; 2x: 1120px -->
             <img src="./img/content/map_desktop.jpg" srcset="./img/content/map_desktop@2x.jpg 2x" alt="Карта" width="560" height="306" data-map-img="image">
           </picture>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003183!2d30.32085871617598!3d59.938719169054046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1657265014571!5m2!1sru!2sru" data-map-iframe="iframe" width="560" height="306" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003183!2d30.32085871617598!3d59.938719169054046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1657265014571!5m2!1sru!2sru" data-map-iframe="iframe" width="560" height="306" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
     </main>
@@ -438,7 +443,7 @@
               <div class="page-footer__facebook">
                 <a href="#">
                   <span class="visually-hidden">фэйсбук</span>
-                  <svg class="social__icon" width="9" height="16">
+                  <svg width="9" height="16">
                     <use href="img/sprite.svg#facebook"></use>
                   </svg>
                 </a>
@@ -448,7 +453,7 @@
               <div class="page-footer__instagram">
                 <a href="#">
                   <span class="visually-hidden">инстаграм</span>
-                  <svg class="social__icon" width="16" height="16">
+                  <svg width="16" height="16">
                     <use href="img/sprite.svg#instagram"></use>
                   </svg>
                 </a>
@@ -458,7 +463,7 @@
               <div class="page-footer__twitter">
                 <a href="#">
                   <span class="visually-hidden">твитер</span>
-                  <svg class="social__icon" width="16" height="13">
+                  <svg width="16" height="13">
                     <use href="img/sprite.svg#twitter"></use>
                   </svg>
                 </a>
@@ -468,28 +473,6 @@
         </div>
       </nav>
     </footer>
-    <script src="../dist/moveTo.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function(){
-      const easeFunctions = {
-        easeInQuad: function (t, b, c, d) {
-          t /= d;
-          return c * t * t + b;
-        },
-        easeOutQuad: function (t, b, c, d) {
-          t /= d;
-          return -c * t* (t - 2) + b;
-        }
-      }
-      const moveTo = new MoveTo({
-        ease: 'easeInQuad'
-      }, easeFunctions);
-      const triggers = document.getElementsByClassName('js-trigger');
-      for (var i = 0; i < triggers.length; i++) {
-        moveTo.registerTrigger(triggers[i]);
-      }
-    });
-  </script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

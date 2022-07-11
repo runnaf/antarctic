@@ -1100,6 +1100,7 @@ button,
   font-weight: 600;
   font-size: 14px;
   background-color: #f9fbfd;
+  outline: none;
 }
 
 .upcoming-cruises__reverse a:hover,
@@ -1112,12 +1113,21 @@ button,
 }
 
 .upcoming-cruises li:hover .upcoming-cruises__front,
-.upcoming-cruises li:focus .upcoming-cruises__front {
+.upcoming-cruises li:focus-within .upcoming-cruises__front {
   display: none;
 }
 
 .upcoming-cruises li:hover .upcoming-cruises__reverse,
-.upcoming-cruises li:focus .upcoming-cruises__reverse {
+.upcoming-cruises li:focus-within .upcoming-cruises__reverse {
+  display: -ms-grid;
+  display: grid;
+}
+
+.upcoming-cruises__item.is-active .upcoming-cruises__front {
+  display: none;
+}
+
+.upcoming-cruises__item.is-active .upcoming-cruises__reverse {
   display: -ms-grid;
   display: grid;
 }
@@ -1597,6 +1607,12 @@ button,
 
 .page-footer__social {
   margin-left: 40px;
+}
+
+.page-footer__social ul {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 
 .page-footer__social a {
