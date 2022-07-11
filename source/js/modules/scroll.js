@@ -1,4 +1,4 @@
-import {MoveTo} from 'moveto';
+import {MoveTo} from '../../moveto/dist/moveTo.min.js';
 
 function scrolling() {
   const moveTo = new MoveTo();
