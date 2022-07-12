@@ -21,14 +21,6 @@
   position: relative;
 }
 
-.advantages h3 > br {
-  display: none;
-
-  @include vp-767 {
-    display: inline;
-  }
-}
-
 .advantages__image {
   position: absolute;
   bottom: 0;
@@ -112,14 +104,6 @@
   }
 }
 
-.advantages__ship h3 > br {
-  display: none;
-
-  @include vp-1365 {
-    display: inline;
-  }
-}
-
 .advantages__ship p {
   @include vp-1365 {
     width: 96%;
@@ -127,24 +111,6 @@
 
   @include vp-767 {
     width: 100%;
-  }
-}
-
-.advantages__ship p > br {
-  display: none;
-
-  @include vp-1365 {
-    &:last-child {
-      display: inline;
-    }
-  }
-
-  @include vp-767 {
-    display: inline;
-
-    &:last-child {
-      display: none;
-    }
   }
 }
 
@@ -191,51 +157,19 @@
   }
 }
 
-.advantages__check h3 > br {
-  display: none;
-
-  @include vp-1365 {
-    display: inline;
-  }
-}
-
 .advantages__check p {
+  width: 95%;
+
   @include vp-767 {
     width: 86%;
   }
 }
 
-.advantages__check p > br {
+.advantages__check br {
   display: none;
 
-  &:first-child {
-    display: inline;
-
-    @include vp-1365 {
-      display: none;
-    }
-
-    @include vp-767 {
-      display: none;
-    }
-  }
-
   @include vp-1365 {
-    display: none;
-
-    &:last-child {
-      display: inline;
-    }
-  }
-
-  @include vp-767 {
-    &:nth-child(2n) {
-      display: inline;
-    }
-
-    &:last-child {
-      display: none;
-    }
+    display: inline;
   }
 }
 
@@ -272,38 +206,34 @@
   }
 }
 
-.advantages__boat p > br {
+.advantages__boat br {
   display: none;
 
   &:first-child {
     display: inline;
   }
 
+  &:last-child {
+    display: inline;
+  }
+
   @include vp-1365 {
     display: none;
 
-    &:first-child {
+    &:last-child {
       display: none;
     }
 
-    &:last-child {
-      display: inline;
+    &:first-child {
+      display: none;
     }
   }
 
   @include vp-767 {
-    display: none;
+    display: inline;
 
     &:first-child {
       display: inline;
-    }
-
-    &:nth-child(3n) {
-      display: inline;
-    }
-
-    &:last-child {
-      display: none;
     }
   }
 }

@@ -435,7 +435,7 @@ html {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Montserrat", "Arial", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif, "Arial", sans-serif;
   color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -583,14 +583,6 @@ button,
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-}
-
-.rouble {
-  font-family: "Montserrat", "Arial", sans-serif;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
 }
 
 .visually-hidden {
@@ -830,10 +822,6 @@ button,
   margin-bottom: 24px;
 }
 
-.promo br {
-  display: none;
-}
-
 .promo p {
   margin: 0;
 }
@@ -857,10 +845,6 @@ button,
 .advantages__content-container {
   z-index: 100;
   position: relative;
-}
-
-.advantages h3 br {
-  display: none;
 }
 
 .advantages__image {
@@ -909,14 +893,6 @@ button,
   height: auto;
 }
 
-.advantages__ship h3 > br {
-  display: none;
-}
-
-.advantages__ship p > br {
-  display: none;
-}
-
 .advantages h3 {
   margin: 13px 0 9px 0;
   font-weight: 500;
@@ -940,16 +916,12 @@ button,
   margin-top: 19px;
 }
 
-.advantages__check h3 > br {
-  display: none;
+.advantages__check p {
+  width: 95%;
 }
 
-.advantages__check p > br {
+.advantages__check br {
   display: none;
-}
-
-.advantages__check p > br:first-child {
-  display: inline;
 }
 
 .advantages__boat svg {
@@ -967,11 +939,15 @@ button,
   width: 82%;
 }
 
-.advantages__boat p > br {
+.advantages__boat br {
   display: none;
 }
 
-.advantages__boat p > br:first-child {
+.advantages__boat br:first-child {
+  display: inline;
+}
+
+.advantages__boat br:last-child {
   display: inline;
 }
 
@@ -1151,10 +1127,6 @@ button,
   align-items: center;
 }
 
-.reservation__content-wrapper br:first-child {
-  display: none;
-}
-
 .reservation__container-image {
   position: absolute;
   top: 0;
@@ -1200,6 +1172,14 @@ button,
   margin-bottom: 9px;
 }
 
+.reservation__content-wrapper p {
+  width: 63%;
+}
+
+.reservation br {
+  display: none;
+}
+
 .reservation__form-wrapper {
   width: 403px;
   padding: 45px 50px 50px;
@@ -1215,10 +1195,6 @@ button,
   padding: 0;
   font-size: 18px;
   line-height: 27px;
-}
-
-.reservation__form-wrapper br {
-  display: none;
 }
 
 .reservation input {
@@ -1756,10 +1732,6 @@ button,
     margin-bottom: 16px;
   }
 
-  .promo br {
-    display: inline;
-  }
-
   .promo p > br {
     display: inline;
   }
@@ -1799,16 +1771,8 @@ button,
     width: 21px;
   }
 
-  .advantages__ship h3 > br {
-    display: inline;
-  }
-
   .advantages__ship p {
     width: 96%;
-  }
-
-  .advantages__ship p > br:last-child {
-    display: inline;
   }
 
   .advantages h3 {
@@ -1826,19 +1790,7 @@ button,
     margin-bottom: 9px;
   }
 
-  .advantages__check h3 > br {
-    display: inline;
-  }
-
-  .advantages__check p > br:first-child {
-    display: none;
-  }
-
-  .advantages__check p > br {
-    display: none;
-  }
-
-  .advantages__check p > br:last-child {
+  .advantages__check br {
     display: inline;
   }
 
@@ -1856,16 +1808,16 @@ button,
     width: 97.2%;
   }
 
-  .advantages__boat p > br {
+  .advantages__boat br {
     display: none;
   }
 
-  .advantages__boat p > br:first-child {
+  .advantages__boat br:last-child {
     display: none;
   }
 
-  .advantages__boat p > br:last-child {
-    display: inline;
+  .advantages__boat br:first-child {
+    display: none;
   }
 
   .upcoming-cruises {
@@ -1920,6 +1872,7 @@ button,
 
   .reservation h2 {
     font-size: 34px;
+    text-align: center;
   }
 
   .reservation__content-wrapper {
@@ -1932,6 +1885,9 @@ button,
 
   .reservation__content-wrapper p {
     text-align: center;
+    width: 58%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .contact {
@@ -2280,6 +2236,7 @@ button,
 
   .promo h2 {
     font-size: 24px;
+    width: 96%;
   }
 
   .promo p > br {
@@ -2295,10 +2252,6 @@ button,
     min-width: 320px;
     min-height: 997px;
     padding-top: 57px;
-  }
-
-  .advantages h3 br {
-    display: inline;
   }
 
   .advantages__image img {
@@ -2324,14 +2277,6 @@ button,
     width: 100%;
   }
 
-  .advantages__ship p > br {
-    display: inline;
-  }
-
-  .advantages__ship p > br:last-child {
-    display: none;
-  }
-
   .advantages__check h3 {
     margin-top: 14px;
     margin-bottom: 10px;
@@ -2341,36 +2286,16 @@ button,
     width: 86%;
   }
 
-  .advantages__check p > br:first-child {
-    display: none;
-  }
-
-  .advantages__check p > br:nth-child(2n) {
-    display: inline;
-  }
-
-  .advantages__check p > br:last-child {
-    display: none;
-  }
-
   .advantages__boat p {
     width: 98%;
   }
 
-  .advantages__boat p > br {
-    display: none;
-  }
-
-  .advantages__boat p > br:first-child {
+  .advantages__boat br {
     display: inline;
   }
 
-  .advantages__boat p > br:nth-child(3n) {
+  .advantages__boat br:first-child {
     display: inline;
-  }
-
-  .advantages__boat p > br:last-child {
-    display: none;
   }
 
   .upcoming-cruises {
@@ -2408,14 +2333,6 @@ button,
     padding-bottom: 65px;
   }
 
-  .reservation__content-wrapper br:first-child {
-    display: block;
-  }
-
-  .reservation__content-wrapper br:last-child {
-    display: none;
-  }
-
   .reservation img {
     height: 760px;
   }
@@ -2434,9 +2351,13 @@ button,
   .reservation__content-wrapper p {
     font-size: 16px;
     line-height: 1.4;
-    width: 90%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .reservation br {
+    display: inline;
   }
 
   .reservation__form-wrapper {
@@ -2450,12 +2371,6 @@ button,
     margin-bottom: 27px;
     text-align: center;
     width: 99%;
-  }
-
-  .reservation__form-wrapper br {
-    display: inline;
-    font-size: 18px;
-    line-height: 1.4;
   }
 
   .reservation input:last-of-type {
