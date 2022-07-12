@@ -6,11 +6,11 @@
   background-color: $color-dark;
 
   @include vp-1365 {
-    padding: 35px 35px 35px 45px;
+    padding: 45px 35px 45px 45px;
   }
 
   @include vp-767 {
-    padding: 37px 4.7% 22px;
+    padding: 41px 4.7% 22px;
     flex-direction: column;
     align-items: start;
     justify-content: center;
@@ -39,7 +39,7 @@
 
   @include vp-767 {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
   }
 }
 
@@ -71,29 +71,24 @@
   margin-top: 10px;
 
   @include vp-1365 {
+    margin: 0;
     margin-left: 23px;
   }
 }
 
-.page-footer a {
+.page-footer__link-menu-container a {
   display: flex;
   align-items: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: hsla(210, 50%, 98%, 0.3);
-  cursor: default;
-  pointer-events: none;
+  color: $color-light;
+  cursor: pointer;
+  pointer-events: auto;
 
-  &[href] {
-    color: $color-light;
-    cursor: pointer;
-    pointer-events: auto;
-
-    &:hover,
-    &:focus-visible {
-      color: hsla(210, 50%, 98%, 0.5);
-    }
+  &:hover,
+  &:focus-visible {
+    color: hsla(210, 50%, 98%, 0.5);
   }
 
   @include vp-1365 {
@@ -106,10 +101,29 @@
   }
 }
 
+.page-footer__link-menu-container.is-inactive a {
+  color: hsla(210, 50%, 98%, 0.3);
+  cursor: default;
+  pointer-events: none;
+
+  &:hover,
+  &:focus-visible {
+    cursor: default;
+    pointer-events: none;
+    outline: none;
+    color: hsla(210, 50%, 98%, 0.3);
+  }
+}
+
+.page-footer__point {
+  @include vp-767 {
+    margin-bottom: 8px;
+  }
+}
+
 .page-footer__point ul {
   @include vp-767 {
     flex-direction: column;
-    margin-bottom: 4px;
   }
 }
 
@@ -140,10 +154,14 @@
   min-width: max-content;
 }
 
-.page-footer__social a {
+.page-footer__link-container a {
+  display: flex;
+  align-items: center;
   height: 40px;
   padding-left: 10px;
   padding-right: 10px;
+  cursor: pointer;
+
 
   @include vp-1365 {
     height: 30px;
@@ -169,16 +187,29 @@
 }
 
 .page-footer__social svg {
-  fill: hsla(210, 50%, 98%, 0.3);
-}
-
-.page-footer__social a[href] svg {
   fill: $color-light;
 }
 
-.page-footer__social a[href]:hover svg,
-.page-footer__social a[href]:focus-visible svg {
+.page-footer__link-container a:hover svg,
+.page-footer__link-container a:focus-visible svg {
   fill: hsla(210, 50%, 98%, 0.5);
+}
+
+.page-footer__link-container.is-inactive svg,
+.page-footer__link-container.is-inactive a:hover svg,
+.page-footer__link-container.is-inactive a:focus-visible svg {
+  fill: hsla(210, 50%, 98%, 0.3);
+  pointer-events: none;
+  outline: none;
+}
+
+.page-footer__link-container.is-inactive a,
+.page-footer__link-container.is-inactive a:hover,
+.page-footer__link-container.is-inactive a:focus-visible {
+  cursor: default;
+  pointer-events: none;
+  outline: none;
+  color: hsla(210, 50%, 98%, 0.3);
 }
 
 .page-footer__twitter svg {

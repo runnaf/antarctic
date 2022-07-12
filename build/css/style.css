@@ -1579,7 +1579,7 @@ button,
   margin-top: 10px;
 }
 
-.page-footer a {
+.page-footer__link-menu-container a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1589,20 +1589,28 @@ button,
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: rgba(247, 250, 252, 0.3);
-  cursor: default;
-  pointer-events: none;
-}
-
-.page-footer a[href] {
   color: #f9fbfd;
   cursor: pointer;
   pointer-events: auto;
 }
 
-.page-footer a[href]:hover,
-.page-footer a[href]:focus-visible {
+.page-footer__link-menu-container a:hover,
+.page-footer__link-menu-container a:focus-visible {
   color: rgba(247, 250, 252, 0.5);
+}
+
+.page-footer__link-menu-container.is-inactive a {
+  color: rgba(247, 250, 252, 0.3);
+  cursor: default;
+  pointer-events: none;
+}
+
+.page-footer__link-menu-container.is-inactive a:hover,
+.page-footer__link-menu-container.is-inactive a:focus-visible {
+  cursor: default;
+  pointer-events: none;
+  outline: none;
+  color: rgba(247, 250, 252, 0.3);
 }
 
 .page-footer__social {
@@ -1615,10 +1623,17 @@ button,
   min-width: max-content;
 }
 
-.page-footer__social a {
+.page-footer__link-container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 40px;
   padding-left: 10px;
   padding-right: 10px;
+  cursor: pointer;
 }
 
 .page-footer__social li {
@@ -1626,16 +1641,29 @@ button,
 }
 
 .page-footer__social svg {
-  fill: rgba(247, 250, 252, 0.3);
-}
-
-.page-footer__social a[href] svg {
   fill: #f9fbfd;
 }
 
-.page-footer__social a[href]:hover svg,
-.page-footer__social a[href]:focus-visible svg {
+.page-footer__link-container a:hover svg,
+.page-footer__link-container a:focus-visible svg {
   fill: rgba(247, 250, 252, 0.5);
+}
+
+.page-footer__link-container.is-inactive svg,
+.page-footer__link-container.is-inactive a:hover svg,
+.page-footer__link-container.is-inactive a:focus-visible svg {
+  fill: rgba(247, 250, 252, 0.3);
+  pointer-events: none;
+  outline: none;
+}
+
+.page-footer__link-container.is-inactive a,
+.page-footer__link-container.is-inactive a:hover,
+.page-footer__link-container.is-inactive a:focus-visible {
+  cursor: default;
+  pointer-events: none;
+  outline: none;
+  color: rgba(247, 250, 252, 0.3);
 }
 
 .page-footer__twitter svg {
@@ -1958,7 +1986,7 @@ button,
   }
 
   .page-footer {
-    padding: 35px 35px 35px 45px;
+    padding: 45px 35px 45px 45px;
   }
 
   .page-footer__logo {
@@ -1970,10 +1998,11 @@ button,
   }
 
   .page-footer li {
+    margin: 0;
     margin-left: 23px;
   }
 
-  .page-footer a {
+  .page-footer__link-menu-container a {
     font-size: 12px;
     line-height: 15px;
   }
@@ -1982,7 +2011,7 @@ button,
     margin-left: 10px;
   }
 
-  .page-footer__social a {
+  .page-footer__link-container a {
     height: 30px;
   }
 
@@ -2309,14 +2338,14 @@ button,
   }
 
   .advantages__check p {
-    width: 87%;
+    width: 86%;
   }
 
   .advantages__check p br:first-child {
     display: none;
   }
 
-  .advantages__check p br:nth-child(2) {
+  .advantages__check p br:nth-child(2n) {
     display: inline;
   }
 
@@ -2336,7 +2365,7 @@ button,
     display: inline;
   }
 
-  .advantages__boat p br:nth-child(3) {
+  .advantages__boat p br:nth-child(3n) {
     display: inline;
   }
 
@@ -2497,7 +2526,7 @@ button,
   }
 
   .page-footer {
-    padding: 37px 4.7% 22px;
+    padding: 41px 4.7% 22px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2525,15 +2554,19 @@ button,
 
   .page-footer__logo {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
   }
 
   .page-footer__logo img {
     min-width: 42px;
   }
 
-  .page-footer a {
+  .page-footer__link-menu-container a {
     min-height: 30px;
+  }
+
+  .page-footer__point {
+    margin-bottom: 8px;
   }
 
   .page-footer__point ul {
@@ -2541,7 +2574,6 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 4px;
   }
 
   .page-footer__point li {
@@ -2557,7 +2589,7 @@ button,
     margin-left: 0;
   }
 
-  .page-footer__social a {
+  .page-footer__link-container a {
     padding-left: 0;
     padding-right: 18px;
   }

@@ -201,7 +201,7 @@
 
 .advantages__check p {
   @include vp-767 {
-    width: 87%;
+    width: 86%;
   }
 }
 
@@ -229,7 +229,7 @@
   }
 
   @include vp-767 {
-    &:nth-child(2) {
+    &:nth-child(2n) {
       display: inline;
     }
 
@@ -298,7 +298,7 @@
       display: inline;
     }
 
-    &:nth-child(3) {
+    &:nth-child(3n) {
       display: inline;
     }
 
