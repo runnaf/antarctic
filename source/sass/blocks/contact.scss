@@ -29,7 +29,7 @@
   }
 }
 
-.contact__container p br {
+.contact__container p > br {
   display: none;
 
   @include vp-1365 {
@@ -47,7 +47,7 @@
   }
 }
 
-.contact__container a br {
+.contact__container a > br {
   display: none;
 
   @include vp-1365 {

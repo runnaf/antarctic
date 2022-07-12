@@ -838,7 +838,7 @@ button,
   margin: 0;
 }
 
-.promo p br {
+.promo p > br {
   display: none;
 }
 
@@ -909,11 +909,11 @@ button,
   height: auto;
 }
 
-.advantages__ship h3 br {
+.advantages__ship h3 > br {
   display: none;
 }
 
-.advantages__ship p br {
+.advantages__ship p > br {
   display: none;
 }
 
@@ -940,15 +940,15 @@ button,
   margin-top: 19px;
 }
 
-.advantages__check h3 br {
+.advantages__check h3 > br {
   display: none;
 }
 
-.advantages__check p br {
+.advantages__check p > br {
   display: none;
 }
 
-.advantages__check p br:first-child {
+.advantages__check p > br:first-child {
   display: inline;
 }
 
@@ -967,11 +967,11 @@ button,
   width: 82%;
 }
 
-.advantages__boat p br {
+.advantages__boat p > br {
   display: none;
 }
 
-.advantages__boat p br:first-child {
+.advantages__boat p > br:first-child {
   display: inline;
 }
 
@@ -1217,7 +1217,7 @@ button,
   line-height: 27px;
 }
 
-.reservation__form-wrapper p br {
+.reservation__form-wrapper br {
   display: none;
 }
 
@@ -1426,11 +1426,11 @@ button,
   flex: 1;
 }
 
-.contact__container p br {
+.contact__container p > br {
   display: none;
 }
 
-.contact__container a br {
+.contact__container a > br {
   display: none;
 }
 
@@ -1760,7 +1760,7 @@ button,
     display: inline;
   }
 
-  .promo p br {
+  .promo p > br {
     display: inline;
   }
 
@@ -1799,7 +1799,7 @@ button,
     width: 21px;
   }
 
-  .advantages__ship h3 br {
+  .advantages__ship h3 > br {
     display: inline;
   }
 
@@ -1807,7 +1807,7 @@ button,
     width: 96%;
   }
 
-  .advantages__ship p br:last-child {
+  .advantages__ship p > br:last-child {
     display: inline;
   }
 
@@ -1826,19 +1826,19 @@ button,
     margin-bottom: 9px;
   }
 
-  .advantages__check h3 br {
+  .advantages__check h3 > br {
     display: inline;
   }
 
-  .advantages__check p br:first-child {
+  .advantages__check p > br:first-child {
     display: none;
   }
 
-  .advantages__check p br {
+  .advantages__check p > br {
     display: none;
   }
 
-  .advantages__check p br:last-child {
+  .advantages__check p > br:last-child {
     display: inline;
   }
 
@@ -1856,15 +1856,15 @@ button,
     width: 97.2%;
   }
 
-  .advantages__boat p br {
+  .advantages__boat p > br {
     display: none;
   }
 
-  .advantages__boat p br:first-child {
+  .advantages__boat p > br:first-child {
     display: none;
   }
 
-  .advantages__boat p br:last-child {
+  .advantages__boat p > br:last-child {
     display: inline;
   }
 
@@ -1944,11 +1944,11 @@ button,
     margin-left: 30px;
   }
 
-  .contact__container p br {
+  .contact__container p > br {
     display: inline;
   }
 
-  .contact__container a br {
+  .contact__container a > br {
     display: inline;
   }
 
@@ -2282,7 +2282,7 @@ button,
     font-size: 24px;
   }
 
-  .promo p br {
+  .promo p > br {
     display: none;
   }
 
@@ -2324,11 +2324,11 @@ button,
     width: 100%;
   }
 
-  .advantages__ship p br {
+  .advantages__ship p > br {
     display: inline;
   }
 
-  .advantages__ship p br:last-child {
+  .advantages__ship p > br:last-child {
     display: none;
   }
 
@@ -2341,15 +2341,15 @@ button,
     width: 86%;
   }
 
-  .advantages__check p br:first-child {
+  .advantages__check p > br:first-child {
     display: none;
   }
 
-  .advantages__check p br:nth-child(2n) {
+  .advantages__check p > br:nth-child(2n) {
     display: inline;
   }
 
-  .advantages__check p br:last-child {
+  .advantages__check p > br:last-child {
     display: none;
   }
 
@@ -2357,19 +2357,19 @@ button,
     width: 98%;
   }
 
-  .advantages__boat p br {
+  .advantages__boat p > br {
     display: none;
   }
 
-  .advantages__boat p br:first-child {
+  .advantages__boat p > br:first-child {
     display: inline;
   }
 
-  .advantages__boat p br:nth-child(3n) {
+  .advantages__boat p > br:nth-child(3n) {
     display: inline;
   }
 
-  .advantages__boat p br:last-child {
+  .advantages__boat p > br:last-child {
     display: none;
   }
 
@@ -2452,7 +2452,7 @@ button,
     width: 99%;
   }
 
-  .reservation__form-wrapper p br {
+  .reservation__form-wrapper br {
     display: inline;
     font-size: 18px;
     line-height: 1.4;
@@ -2494,7 +2494,7 @@ button,
     margin-bottom: 36px;
   }
 
-  .contact__container p br {
+  .contact__container p > br {
     display: none;
   }
 
@@ -2526,7 +2526,7 @@ button,
   }
 
   .page-footer {
-    padding: 41px 4.7% 22px;
+    padding: 41px 4.7% 33px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2566,7 +2566,7 @@ button,
   }
 
   .page-footer__point {
-    margin-bottom: 8px;
+    margin-bottom: 13px;
   }
 
   .page-footer__point ul {
