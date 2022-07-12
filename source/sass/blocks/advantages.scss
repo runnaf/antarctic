@@ -21,7 +21,7 @@
   position: relative;
 }
 
-.advantages h3 br {
+.advantages h3 > br {
   display: none;
 
   @include vp-767 {
