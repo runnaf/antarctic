@@ -966,12 +966,13 @@ button,
   list-style: none;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
 }
 
 .upcoming-cruises li {
   width: 100%;
+  max-width: 300px;
   height: 386px;
   cursor: pointer;
   background-color: #011c40;
@@ -2351,7 +2352,6 @@ button,
   }
 
   .upcoming-cruises li {
-    max-width: 300px;
     margin: 0 auto;
   }
 
