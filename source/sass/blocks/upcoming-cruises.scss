@@ -54,6 +54,11 @@
   cursor: pointer;
   background-color: $color-dark;
   color: $color-light;
+
+  @include vp-767 {
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }
 
 .upcoming-cruises__front {

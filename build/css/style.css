@@ -1389,9 +1389,7 @@ button,
 }
 
 .contact__container {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  max-width: 500px;
 }
 
 .contact__map {
@@ -1399,6 +1397,9 @@ button,
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
   order: -1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .contact p {
@@ -1485,14 +1486,14 @@ button,
 
 .contact__map img {
   display: block;
-  width: 560px;
+  width: 100%;
   height: 306px;
 }
 
 .contact__map iframe {
   border: none;
   display: none;
-  width: 560px;
+  width: 100%;
   height: 306px;
 }
 
@@ -1509,7 +1510,6 @@ button,
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   width: 100%;
-  padding: 40px 94px 40px 103px;
   background-color: #011c40;
 }
 
@@ -1540,6 +1540,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 40px 94px 40px 103px;
 }
 
 .page-footer__logo {
@@ -1926,6 +1927,7 @@ button,
   }
 
   .contact__container {
+    max-width: 324px;
     margin-bottom: 3px;
     margin-left: 30px;
   }
@@ -1971,7 +1973,7 @@ button,
     height: 335px;
   }
 
-  .page-footer {
+  .page-footer__container {
     padding: 45px 35px 45px 45px;
   }
 
@@ -2221,6 +2223,7 @@ button,
     flex-direction: column;
     background-color: #f9fbfd;
     position: static;
+    padding-right: calc(4.7% + 10px);
   }
 
   .page-header.is-active ul {
@@ -2347,6 +2350,11 @@ button,
     margin: 0 auto;
   }
 
+  .upcoming-cruises li {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
   .upcoming-cruises__front h3 {
     padding: 17px 24px;
   }
@@ -2431,6 +2439,7 @@ button,
   .contact__container {
     margin: 0;
     margin-bottom: 36px;
+    max-width: 100%;
   }
 
   .contact__container p {
@@ -2460,20 +2469,6 @@ button,
     height: 316px;
   }
 
-  .page-footer {
-    padding: 41px 4.7% 33px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: start;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
   .page-footer__nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2488,6 +2483,7 @@ button,
   }
 
   .page-footer__container {
+    padding: 41px 4.7% 33px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
