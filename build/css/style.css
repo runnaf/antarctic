@@ -1863,8 +1863,6 @@ button,
   }
 
   .upcoming-cruises ul {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -2344,10 +2342,9 @@ button,
   }
 
   .upcoming-cruises ul {
-    -ms-grid-columns: (1fr)[1];
-    grid-template-columns: repeat(1, 1fr);
     padding-left: 11px;
     padding-right: 11px;
+    margin: 0 auto;
   }
 
   .upcoming-cruises__front h3 {

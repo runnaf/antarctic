@@ -37,15 +37,14 @@
   gap: 30px;
 
   @include vp-1023 {
-    grid-template-columns: repeat(2, 1fr);
     padding-left: 15px;
     padding-right: 15px;
   }
 
   @include vp-767 {
-    grid-template-columns: repeat(1, 1fr);
     padding-left: 11px;
     padding-right: 11px;
+    margin: 0 auto;
   }
 }
 
