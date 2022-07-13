@@ -457,7 +457,6 @@ img,
 video {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 textarea {
@@ -626,7 +625,6 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1366px;
   margin: 0 auto;
   padding: 120px 103px;
 }
@@ -638,7 +636,10 @@ button,
 }
 
 .page-header {
-  max-width: 1366px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 34px 104px 34px 103px;
@@ -677,6 +678,12 @@ button,
   height: min-content;
 }
 
+.page-header__button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .page-header button {
   display: none;
 }
@@ -698,6 +705,8 @@ button,
 
 .page-header li {
   margin-left: 34px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .page-header a {
@@ -719,6 +728,10 @@ button,
   cursor: default;
   pointer-events: none;
   outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .page-header a[href] {
@@ -744,7 +757,6 @@ button,
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
-  max-width: 1366px;
   min-height: 542px;
   margin-left: auto;
   margin-right: auto;
@@ -752,7 +764,6 @@ button,
   color: #f9fbfd;
   font-size: 20px;
   line-height: 24px;
-  background-color: #023269;
 }
 
 .top br {
@@ -786,13 +797,11 @@ button,
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 1366px;
   background-color: #023269;
 }
 
 .top__image img {
-  width: 1366px;
-  height: auto;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -854,15 +863,13 @@ button,
   right: 0;
   left: 0;
   margin: auto;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
+  height: 100%;
   z-index: 1;
 }
 
 .advantages__image img {
-  width: 1366px;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .advantages h2 {
@@ -978,8 +985,7 @@ button,
 
 .upcoming-cruises li {
   width: 100%;
-  height: 100%;
-  min-height: 386px;
+  height: 386px;
   cursor: pointer;
   background-color: #011c40;
   color: #f9fbfd;
@@ -1005,7 +1011,7 @@ button,
 }
 
 .upcoming-cruises__front img {
-  width: 260px;
+  width: 100%;
   height: 386px;
   margin: auto;
 }
@@ -1019,6 +1025,7 @@ button,
   padding: 29px 25px 34px;
   height: 100%;
   width: 100%;
+  overflow: auto;
 }
 
 .upcoming-cruises__reverse h3 {
@@ -1077,6 +1084,10 @@ button,
   font-size: 14px;
   background-color: #f9fbfd;
   outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .upcoming-cruises__reverse a:hover,
@@ -1099,21 +1110,11 @@ button,
   display: grid;
 }
 
-.upcoming-cruises__item.is-active .upcoming-cruises__front {
-  display: none;
-}
-
-.upcoming-cruises__item.is-active .upcoming-cruises__reverse {
-  display: -ms-grid;
-  display: grid;
-}
-
 .reservation {
   position: relative;
   padding: 50px 163px;
   min-height: 555px;
   width: 100%;
-  max-width: 1366px;
   margin-left: auto;
   margin-right: auto;
   display: -webkit-box;
@@ -1125,6 +1126,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: #bedafa;
 }
 
 .reservation__container-image {
@@ -1134,7 +1136,7 @@ button,
   left: 0;
   right: 0;
   margin: auto;
-  z-index: -1;
+  z-index: 50;
 }
 
 .reservation img {
@@ -1145,8 +1147,8 @@ button,
   right: 0;
   margin: auto;
   z-index: -1;
-  width: 1366px;
-  height: 555px;
+  width: 100%;
+  height: 100%;
 }
 
 .reservation h2 {
@@ -1170,6 +1172,7 @@ button,
   flex: 1;
   margin-right: 40px;
   margin-bottom: 9px;
+  z-index: 100;
 }
 
 .reservation__content-wrapper p {
@@ -1187,6 +1190,7 @@ button,
   font-size: 18px;
   color: #f9fbfd;
   background-color: #011c40;
+  z-index: 100;
 }
 
 .reservation__form-wrapper p {
@@ -1371,6 +1375,10 @@ button,
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .reservation button:hover,
@@ -1446,7 +1454,6 @@ button,
 
 .contact a {
   margin-left: 10px;
-  width: 100%;
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
@@ -1454,6 +1461,10 @@ button,
   pointer-events: none;
   color: rgba(1, 29, 65, 0.3);
   outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .contact a[href] {
@@ -1480,6 +1491,21 @@ button,
   fill: rgba(1, 29, 65, 0.5);
 }
 
+.contact__adress-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__adress-container p {
+  font-size: 16px;
+  margin: 0;
+  margin-left: 10px;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
 .contact__map img {
   display: block;
   width: 560px;
@@ -1502,6 +1528,10 @@ button,
 }
 
 .page-footer {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1568,6 +1598,10 @@ button,
   color: #f9fbfd;
   cursor: pointer;
   pointer-events: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .page-footer__link-menu-container a:hover,
@@ -1610,6 +1644,10 @@ button,
   padding-left: 10px;
   padding-right: 10px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .page-footer__social li {
@@ -1657,6 +1695,28 @@ button,
   height: auto;
 }
 
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.page.is-stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.page-main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1664,7 +1724,7 @@ button,
   }
 } */
 
-@media (max-width: 1365px) {
+@media (max-width: 1023px) {
   .container {
     padding: 90px 45px;
   }
@@ -1675,7 +1735,7 @@ button,
   }
 
   .page-header {
-    padding: 20px 45px;
+    padding: 10px 45px;
   }
 
   .page-header__logo img {
@@ -1712,8 +1772,6 @@ button,
   }
 
   .top__image img {
-    width: 100%;
-    height: 646px;
     -o-object-fit: cover;
     object-fit: cover;
   }
@@ -1746,11 +1804,11 @@ button,
   .advantages {
     padding-top: 91px;
     padding-bottom: 100px;
+    min-height: 592px;
   }
 
   .advantages__image img {
     width: 100%;
-    height: 592px;
     -o-object-fit: cover;
     object-fit: cover;
   }
@@ -1864,8 +1922,6 @@ button,
   }
 
   .reservation img {
-    width: 100%;
-    height: 807px;
     -o-object-fit: cover;
     object-fit: cover;
   }
@@ -1927,6 +1983,10 @@ button,
 
   .contact svg {
     margin-top: 5px;
+  }
+
+  .contact__adress-container p {
+    margin-bottom: 0;
   }
 
   .contact__map img {
@@ -2184,13 +2244,19 @@ button,
 
   .page-header.is-active .page-header__wrapper {
     width: 89%;
-    min-height: 568px;
+    height: 100vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     background-color: #f9fbfd;
     position: static;
+  }
+
+  .page-header.is-active ul {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
   }
 
   .top {
@@ -2215,8 +2281,7 @@ button,
   }
 
   .top__image img {
-    width: 100%;
-    height: 507px;
+    height: 500px;
   }
 
   .promo {
@@ -2252,10 +2317,6 @@ button,
     min-width: 320px;
     min-height: 997px;
     padding-top: 57px;
-  }
-
-  .advantages__image img {
-    height: 997px;
   }
 
   .advantages h2 {
@@ -2331,10 +2392,6 @@ button,
   .reservation {
     padding-top: 59px;
     padding-bottom: 65px;
-  }
-
-  .reservation img {
-    height: 760px;
   }
 
   .reservation h2 {

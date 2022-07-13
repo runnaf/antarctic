@@ -69,6 +69,11 @@ const copyImages = () => {
       .pipe(gulp.dest('build'));
 };
 
+const copyManifest = () => {
+  return gulp.src('source/*.webmanifest')
+      .pipe(gulp.dest('build'));
+};
+
 const copy = () => {
   return gulp.src([
     'source/**.html',
@@ -120,7 +125,7 @@ const createWebp = () => {
       .pipe(gulp.dest(`build/img/${root}`));
 };
 
-const build = gulp.series(clean, svgo, copy, css, sprite, js, createWebp);
+const build = gulp.series(clean, svgo, copy, css, sprite, js, createWebp, copyManifest);
 
 const start = gulp.series(build, syncServer);
 

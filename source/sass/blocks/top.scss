@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  max-width: $vp-1366;
+  // max-width: $vp-1366;
   min-height: 542px;
   margin-left: auto;
   margin-right: auto;
@@ -11,9 +11,8 @@
   color: $color-light;
   font-size: 20px;
   line-height: 24px;
-  background-color: $color-background;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding: 50px 45px 137px;
     min-height: 558px;
   }
@@ -37,7 +36,7 @@
   width: 100%;
   z-index: 100;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-left: auto;
     margin-right: auto;
   }
@@ -51,7 +50,7 @@
   line-height: 66px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 50px;
     line-height: 61px;
   }
@@ -67,7 +66,7 @@
   margin: 0;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 18px;
     line-height: 22px;
   }
@@ -86,24 +85,19 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: $vp-1366;
   background-color: $color-background;
 }
 
 .top__image img {
-  width: 1366px;
-  height: auto;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 
-  @include vp-1365 {
-    width: 100%;
-    height: 646px;
+  @include vp-1023 {
     object-fit: cover;
   }
 
   @include vp-767 {
-    width: 100%;
-    height: 507px;
+    height: 500px;
   }
 }

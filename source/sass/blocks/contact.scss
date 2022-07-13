@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding-top: 101px;
     padding-bottom: 100px;
   }
@@ -18,7 +18,7 @@
 .contact__container {
   flex: 1;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-bottom: 3px;
     margin-left: 30px;
   }
@@ -32,7 +32,7 @@
 .contact__container p > br {
   display: none;
 
-  @include vp-1365 {
+  @include vp-1023 {
     display: inline;
   }
 
@@ -50,7 +50,7 @@
 .contact__container a > br {
   display: none;
 
-  @include vp-1365 {
+  @include vp-1023 {
     display: inline;
   }
 }
@@ -59,7 +59,7 @@
   margin-right: 100px;
   order: -1;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin: 0;
     flex: 1;
     // min-width: 324px;
@@ -78,7 +78,7 @@
   margin: 0;
   margin-bottom: 31px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-bottom: 26px;
   }
 }
@@ -102,19 +102,19 @@
     margin-bottom: 0;
   }
 
-  @include vp-1365 {
+  @include vp-1023 {
     align-items: start;
   }
 }
 
 .contact a {
   margin-left: 10px;
-  width: 100%;
   order: 1;
   cursor: default;
   pointer-events: none;
   color: hsla(214, 97%, 13%, 0.3);
   outline: none;
+  user-select: none;
 
   &[href] {
     cursor: pointer;
@@ -129,7 +129,7 @@
 }
 
 .contact svg {
-  @include vp-1365 {
+  @include vp-1023 {
     margin-top: 5px;
   }
 }
@@ -147,12 +147,27 @@
   fill: hsla(214, 97%, 13%, 0.5);
 }
 
+.contact__adress-container {
+  display: flex;
+}
+
+.contact__adress-container p {
+  font-size: 16px;
+  margin: 0;
+  margin-left: 10px;
+  order: 1;
+
+  @include vp-1023 {
+    margin-bottom: 0;
+  }
+}
+
 .contact__map img {
   display: block;
   width: 560px;
   height: 306px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     width: 324px;
     height: 335px;
     object-fit: cover;
@@ -172,7 +187,7 @@
   width: 560px;
   height: 306px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     width: 100%;
     height: 335px;
   }
