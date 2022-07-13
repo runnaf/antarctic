@@ -1,15 +1,15 @@
 .reservation {
   position: relative;
-  padding: 50px 163px;
   min-height: 555px;
   width: 100%;
-  // max-width: $vp-1366;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: $color-backgroundlight;
+}
+
+.reservation__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $color-backgroundlight;
+  padding: 50px 163px;
 
   @include vp-1023 {
     min-height: 100%;
@@ -110,14 +110,6 @@
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-.reservation br {
-  display: none;
-
-  @include vp-767 {
-    display: inline;
   }
 }
 

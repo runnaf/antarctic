@@ -3,12 +3,12 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 34px 104px 34px 103px;
+  padding: 24px 104px 24px 103px;
   position: relative;
   z-index: 100;
 
   @include vp-1023 {
-    padding: 10px 45px;
+    padding: 15px 45px;
   }
 
   @include vp-767 {
@@ -101,6 +101,8 @@
 
   @include vp-1023 {
     margin-left: 24px;
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
 
   @include vp-767 {

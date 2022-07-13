@@ -1,9 +1,6 @@
 .page-footer {
   flex: 0 0 auto;
   width: 100%;
-  display: flex;
-  justify-content: start;
-  align-items: center;
   padding: 40px 94px 40px 103px;
   background-color: $color-dark;
 
@@ -23,6 +20,22 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  @include vp-767 {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+}
+
+.page-footer__container {
+  max-width: 1366px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: start;
   align-items: center;
 
   @include vp-767 {
