@@ -11,7 +11,13 @@ const openingMenu = () => {
     menuButton.addEventListener('click', ()=>{
       menuContainer.classList.toggle('is-active');
       document.body.classList.toggle('is-stop-scrolling');
+      const visibilitys = document.querySelectorAll('[data-visibility]');
       if (menuContainer.classList.contains('is-active')) {
+        if (visibilitys.length > 0) {
+          visibilitys.forEach((item) => {
+            item.style.opacity = '0';
+          });
+        }
         document.addEventListener('click', (e) => {
           if (!e.target.closest('.page-header__wrapper')) {
             menuContainer.classList.remove('is-active');
@@ -19,6 +25,11 @@ const openingMenu = () => {
           }
         });
       } else {
+        if (visibilitys.length > 0) {
+          visibilitys.forEach((item) => {
+            item.style.opacity = '1';
+          });
+        }
         document.removeEventListener('click', (e) => {
           if (!e.target.closest('.page-header__wrapper')) {
             menuContainer.classList.remove('is-active');

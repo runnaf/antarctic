@@ -8,7 +8,6 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
   @include vp-767 {
     flex-direction: column;
@@ -24,15 +23,14 @@
   margin-right: auto;
   display: flex;
   justify-content: start;
-  align-items: center;
-  padding: 40px 94px 40px 103px;
+  padding: 45px 94px 43px 103px;
 
   @include vp-1023 {
-    padding: 45px 35px 45px 45px;
+    padding: 39px 35px 35px 45px;
   }
 
   @include vp-767 {
-    padding: 41px 4.7% 33px;
+    padding: 32px 4.7% 33px;
     flex-direction: column;
     align-items: start;
     justify-content: center;
@@ -44,6 +42,7 @@
 
   @include vp-1023 {
     margin-right: 2px;
+    padding-top: 10px;
   }
 
   @include vp-767 {
@@ -56,12 +55,15 @@
   width: 100%;
   min-width: 70px;
   height: auto;
+  padding-top: 6px;
 
   @include vp-1023 {
+    padding-top: 0;
     min-width: 38px;
   }
 
   @include vp-767 {
+    padding-top: 0;
     min-width: 42px;
   }
 }
@@ -76,12 +78,26 @@
 
 .page-footer li {
   margin-left: 33px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 
   @include vp-1023 {
-    margin: 0;
     margin-left: 23px;
+  }
+}
+
+.page-footer__point li {
+  @include vp-1023 {
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    margin-bottom: 2px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -95,6 +111,7 @@
   cursor: pointer;
   pointer-events: auto;
   user-select: none;
+  min-height: 40px;
 
   &:hover,
   &:focus-visible {
@@ -127,24 +144,13 @@
 
 .page-footer__point {
   @include vp-767 {
-    margin-bottom: 13px;
+    margin-bottom: 7px;
   }
 }
 
 .page-footer__point ul {
   @include vp-767 {
     flex-direction: column;
-  }
-}
-
-.page-footer__point li {
-  @include vp-767 {
-    margin: 0;
-    margin-bottom: 2px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 }
 

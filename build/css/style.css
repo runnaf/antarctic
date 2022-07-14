@@ -638,13 +638,13 @@ button,
 }
 
 .page-header {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 24px 104px 24px 103px;
+  padding: 26px 104px 23px 103px;
   position: relative;
   z-index: 100;
 }
@@ -747,6 +747,12 @@ button,
   color: rgba(247, 250, 252, 0.5);
 }
 
+.page-header.is-active a {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
 .top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -805,7 +811,7 @@ button,
 
 .top__image img {
   width: 100%;
-  min-height: 100%;
+  min-height: 658px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -954,7 +960,7 @@ button,
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 49px;
+  margin-bottom: 50px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -1170,7 +1176,7 @@ button,
 
 .reservation__form-wrapper {
   width: 403px;
-  padding: 45px 50px 50px;
+  padding: 43px 50px 50px;
   font-weight: 500;
   font-size: 18px;
   color: #f9fbfd;
@@ -1264,6 +1270,7 @@ button,
 }
 
 .reservation__checkbox-container {
+  margin-top: 2px;
   margin-bottom: 28px;
   min-height: 18px;
 }
@@ -1522,9 +1529,6 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .page-footer__container {
@@ -1538,10 +1542,7 @@ button,
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 40px 94px 40px 103px;
+  padding: 45px 94px 43px 103px;
 }
 
 .page-footer__logo {
@@ -1552,6 +1553,7 @@ button,
   width: 100%;
   min-width: 70px;
   height: auto;
+  padding-top: 6px;
 }
 
 .page-footer ul {
@@ -1567,8 +1569,8 @@ button,
 
 .page-footer li {
   margin-left: 33px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .page-footer__link-menu-container a {
@@ -1588,6 +1590,7 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  min-height: 40px;
 }
 
 .page-footer__link-menu-container a:hover,
@@ -1689,7 +1692,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 .page.is-stop-scrolling {
@@ -1869,6 +1872,10 @@ button,
     padding-right: 15px;
   }
 
+  .upcoming-cruises li {
+    min-width: 309px;
+  }
+
   .upcoming-cruises__front h3 {
     padding: 27px 35px;
   }
@@ -1920,6 +1927,14 @@ button,
     width: 58%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .reservation__form-wrapper {
+    padding: 45px 50px 51px;
+  }
+
+  .reservation__checkbox-container {
+    margin-top: 0;
   }
 
   .contact {
@@ -1975,20 +1990,25 @@ button,
   }
 
   .page-footer__container {
-    padding: 45px 35px 45px 45px;
+    padding: 39px 35px 35px 45px;
   }
 
   .page-footer__logo {
     margin-right: 2px;
+    padding-top: 10px;
   }
 
   .page-footer__logo img {
+    padding-top: 0;
     min-width: 38px;
   }
 
   .page-footer li {
-    margin: 0;
     margin-left: 23px;
+  }
+
+  .page-footer__point li {
+    margin-top: 0;
   }
 
   .page-footer__link-menu-container a {
@@ -2212,11 +2232,11 @@ button,
   }
 
   .page-header.is-active .page-header__button-container {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
 
   .page-header.is-active .page-header__wrapper {
-    width: 89%;
+    width: 89.5%;
     height: 100vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2224,13 +2244,18 @@ button,
     flex-direction: column;
     background-color: #f9fbfd;
     position: static;
-    padding-right: calc(4.7% + 10px);
+    padding-right: calc(4.7% + 3px);
   }
 
   .page-header.is-active ul {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: start;
+    padding-left: 10px;
+  }
+
+  .page-header.is-active li {
+    margin-bottom: 10px;
   }
 
   .top {
@@ -2295,7 +2320,7 @@ button,
 
   .advantages__content-container {
     min-width: 320px;
-    padding-top: 57px;
+    padding-top: 56px;
   }
 
   .advantages h2 {
@@ -2353,6 +2378,7 @@ button,
 
   .upcoming-cruises li {
     margin: 0 auto;
+    min-width: 270px;
   }
 
   .upcoming-cruises__front h3 {
@@ -2369,7 +2395,7 @@ button,
   }
 
   .reservation__container {
-    padding-top: 59px;
+    padding-top: 60px;
     padding-bottom: 65px;
   }
 
@@ -2483,7 +2509,7 @@ button,
   }
 
   .page-footer__container {
-    padding: 41px 4.7% 33px;
+    padding: 32px 4.7% 33px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2502,22 +2528,8 @@ button,
   }
 
   .page-footer__logo img {
+    padding-top: 0;
     min-width: 42px;
-  }
-
-  .page-footer__link-menu-container a {
-    min-height: 30px;
-  }
-
-  .page-footer__point {
-    margin-bottom: 13px;
-  }
-
-  .page-footer__point ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
   }
 
   .page-footer__point li {
@@ -2527,6 +2539,21 @@ button,
 
   .page-footer__point li:last-child {
     margin-bottom: 0;
+  }
+
+  .page-footer__link-menu-container a {
+    min-height: 30px;
+  }
+
+  .page-footer__point {
+    margin-bottom: 7px;
+  }
+
+  .page-footer__point ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .page-footer__social {

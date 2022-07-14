@@ -10,12 +10,12 @@
     <link rel="preload" type="font/woff2" crossorigin="anonymous" href="./fonts/Montserrat-Regular.woff2" as="font">
     <link rel="preload" type="font/woff2" crossorigin="anonymous" href="./fonts/Montserrat-Medium.woff2" as="font">
     <link rel="preload" type="font/woff2" crossorigin="anonymous" href="./fonts/Montserrat-SemiBold.woff2" as="font">
-    <link rel="icon" href="favicon/favicon32.ico"> <!-- 32×32 -->
-    <link rel="icon" href="favicon/favicon16.ico"> <!-- 16×16 -->
-    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicon/apple.png"> <!-- 180×180 -->
-    <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="./favicon/favicon32.ico"> <!-- 32×32 -->
+    <link rel="icon" href="./favicon/favicon16.ico"> <!-- 16×16 -->
+    <link rel="icon" href="./img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicon/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="page">
     <header class="page-header container" data-menu="menu">
@@ -60,7 +60,7 @@
     </header>
     <main class="page-main">
       <section class="top">
-        <div class="top__container-desc container">
+        <div class="top__container-desc container" data-visibility="hidden">
           <h1>Круизы в&nbsp;Антарктику</h1>
           <p>Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
         </div>
@@ -75,7 +75,7 @@
         </div>
       </section>
       <section class="promo container">
-        <div class="promo__wrapper">
+        <div class="promo__wrapper" data-visibility="hidden">
           <h2>Путешествие на&nbsp;край&nbsp;Земли</h2>
           <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
         </div>
@@ -88,7 +88,7 @@
         </div>
       </section>
       <section class="advantages" id="advantages">
-        <div class="advantages__content-container container">
+        <div class="advantages__content-container container" data-visibility="hidden">
           <h2>Преимущества</h2>
           <ul>
             <li>
@@ -115,7 +115,7 @@
                   <use href="img/sprite.svg#boat"></use>
                 </svg>
                 <h3>Экскурсионные туры&nbsp;на&nbsp;Zodiac</h3>
-                <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;<br>oборудованных лодках типа&nbsp;Zodiac в&nbsp;сопровождении опытных экскурсоводов.</p>
+                <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;<br>oборудованных лодках типа&nbsp;<br>Zodiac в&nbsp;сопровождении опытных экскурсоводов.</p>
               </div>
             </li>
           </ul>
@@ -128,7 +128,7 @@
           <img src="./img/content/advantages_desktop.jpg" srcset="./img/content/advantages_desktop@2x.jpg 2x" alt="горы и море Антарктики фон" width="1024" height="562">
         </div>
       </section>
-      <section class="upcoming-cruises container" id="upcoming-cruises">
+      <section class="upcoming-cruises container" id="upcoming-cruises" data-visibility="hidden">
         <h2>Ближайшие круизы</h2>
         <ul>
           <li tabindex="0">
@@ -326,7 +326,7 @@
         </ul>
       </section>
       <section class="reservation">
-        <div class="container reservation__container">
+        <div class="container reservation__container" data-visibility="hidden">
           <div class="reservation__content-wrapper">
             <h2>Раннее бронирование</h2>
             <p>Забронируйте тур за&nbsp;3&nbsp;-&nbsp;6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до 50%</p>
@@ -358,7 +358,7 @@
           <img src="./img/content/reservation_desktop.jpg" srcset="./img/content/reservation_desktop@2x.jpg 2x" alt="горы и замерзшее море" width="1024" height="555">
         </div>
       </section>
-      <section class="contact container" id="contact">
+      <section class="contact container" id="contact" data-visibility="hidden">
         <div class="contact__container">
           <h2 class="visually-hidden">Контакты</h2>
           <p>У вас ещё остались вопросы или сомнения? Приезжайте к нам в&nbsp;офис&nbsp;и мы вам все расскажем.</p>
@@ -425,41 +425,41 @@
               </li>
             </ul>
           </div>
-          <div class="page-footer__social">
-            <ul>
-              <li>
-                <div class="page-footer__facebook page-footer__link-container"> <!--is-inactive - класс для неактивной ссылки-->
-                  <a href="#">
-                    <span class="visually-hidden">фэйсбук</span>
-                    <svg width="9" height="16">
-                      <use href="img/sprite.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div class="page-footer__instagram page-footer__link-container">
-                  <a href="#">
-                    <span class="visually-hidden">инстаграм</span>
-                    <svg width="16" height="16">
-                      <use href="img/sprite.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div class="page-footer__twitter page-footer__link-container">
-                  <a href="#">
-                    <span class="visually-hidden">твитер</span>
-                    <svg width="16" height="13">
-                      <use href="img/sprite.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
         </nav>
+        <div class="page-footer__social">
+          <ul>
+            <li>
+              <div class="page-footer__facebook page-footer__link-container"> <!--is-inactive - класс для неактивной ссылки-->
+                <a href="#">
+                  <span class="visually-hidden">фэйсбук</span>
+                  <svg width="9" height="16">
+                    <use href="img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="page-footer__instagram page-footer__link-container">
+                <a href="#">
+                  <span class="visually-hidden">инстаграм</span>
+                  <svg width="16" height="16">
+                    <use href="img/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="page-footer__twitter page-footer__link-container">
+                <a href="#">
+                  <span class="visually-hidden">твитер</span>
+                  <svg width="16" height="13">
+                    <use href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
     <script src="js/vendor.min.js"></script>

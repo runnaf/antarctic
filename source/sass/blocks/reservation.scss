@@ -19,7 +19,7 @@
   }
 
   @include vp-767 {
-    padding-top: 59px;
+    padding-top: 60px;
     padding-bottom: 65px;
   }
 }
@@ -115,12 +115,16 @@
 
 .reservation__form-wrapper {
   width: 403px;
-  padding: 45px 50px 50px;
+  padding: 43px 50px 50px;
   font-weight: 500;
   font-size: 18px;
   color: $color-light;
   background-color: $color-dark;
   z-index: 100;
+
+  @include vp-1023 {
+    padding: 45px 50px 51px;
+  }
 
   @include vp-767 {
     width: 100%;
@@ -178,8 +182,13 @@
 }
 
 .reservation__checkbox-container {
+  margin-top: 2px;
   margin-bottom: 28px;
   min-height: 18px;
+
+  @include vp-1023 {
+    margin-top: 0;
+  }
 
   @include vp-767 {
     margin-bottom: 27px;

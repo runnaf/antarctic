@@ -14,7 +14,7 @@
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 49px;
+  margin-bottom: 50px;
   width: max-content;
 
   @include vp-1023 {
@@ -56,8 +56,13 @@
   background-color: $color-dark;
   color: $color-light;
 
+  @include vp-1023 {
+    min-width: 309px;
+  }
+
   @include vp-767 {
     margin: 0 auto;
+    min-width: 270px;
   }
 }
 

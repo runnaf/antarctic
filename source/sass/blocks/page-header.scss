@@ -1,9 +1,9 @@
 .page-header {
-  flex: 1 0 auto;
+  flex: 0 0 auto;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 24px 104px 24px 103px;
+  padding: 26px 104px 23px 103px;
   position: relative;
   z-index: 100;
 
@@ -290,23 +290,36 @@
 
 .page-header.is-active .page-header__button-container {
   @include vp-767 {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
 }
 
 .page-header.is-active .page-header__wrapper {
   @include vp-767 {
-    width: 89%;
+    width: 89.5%;
     height: 100vh;
     flex-direction: column;
     background-color: $color-light;
     position: static;
-    padding-right: calc(4.7% + 10px);
+    padding-right: calc(4.7% + 3px);
   }
 }
 
 .page-header.is-active ul {
   @include vp-767 {
     justify-content: start;
+    padding-left: 10px;
   }
+}
+
+.page-header.is-active li {
+  @include vp-767 {
+    margin-bottom: 10px;
+  }
+}
+
+.page-header.is-active a {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
 }
