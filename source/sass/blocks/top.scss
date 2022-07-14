@@ -3,23 +3,23 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  min-height: 542px;
+  min-height: 573px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 103px 116px 198px;
+  padding: 17px 0 116px;
   color: $color-light;
   font-size: 20px;
   line-height: 24px;
+  z-index: -1;
 
   @include vp-1023 {
-    padding: 50px 45px 137px;
-    min-height: 558px;
+    padding: 56px 0 137px;
+    min-height: 581px;
   }
 
   @include vp-767 {
-    padding: 80px 4.7% 84px;
-    min-height: 501px;
-    position: relative;
+    padding: 80px 4.7% 88px;
+    min-height: 506px;
   }
 }
 
@@ -32,7 +32,10 @@
 }
 
 .top__container-desc {
-  padding: 0;
+  padding: 0 100px 0 198px;
+  max-width: $vp-1366;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   z-index: 100;
 
@@ -47,7 +50,7 @@
   }
 }
 
-.top h1 {
+.top h2 {
   margin: 0;
   margin-bottom: 12px;
   font-weight: bold;
@@ -90,22 +93,16 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  background-color: $color-background;
+  height: 100%;
 }
 
 .top__image img {
   width: 100%;
-  min-height: 658px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
 
   @include vp-1023 {
     object-fit: cover;
-    min-height: 638px;
-  }
-
-  @include vp-767 {
-    height: 506px;
-    min-height: 0;
   }
 }

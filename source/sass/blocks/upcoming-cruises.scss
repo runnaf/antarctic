@@ -37,24 +37,29 @@
   gap: 30px;
 
   @include vp-1023 {
+    grid-template-columns: repeat(auto-fit, minmax(309px, 1fr));
     padding-left: 15px;
     padding-right: 15px;
   }
 
   @include vp-767 {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     padding-left: 11px;
     padding-right: 11px;
     margin: 0 auto;
+    max-width: 677px;
+    width: 100%;
   }
 }
 
 .upcoming-cruises li {
   width: 100%;
-  max-width: 300px;
+  max-width: 320px;
   height: 386px;
   cursor: pointer;
   background-color: $color-dark;
   color: $color-light;
+  justify-self: center;
 
   @include vp-1023 {
     min-width: 309px;
