@@ -42,6 +42,7 @@
   z-index: 100;
   position: relative;
   align-items: flex-start;
+  background-color: $color-light;
 
   @include vp-767 {
     margin: 0;
@@ -135,7 +136,7 @@
   font-weight: 500;
   line-height: 19.5px;
   font-size: 16px;
-  color: hsla(210, 50%, 98%, 0.3);
+  color: $ff-colorlight-disabled;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,7 +146,7 @@
   user-select: none;
 
   @include vp-767 {
-    color: hsla(214, 97%, 13%, 0.3);
+    color: $ff-color-disabled;
     justify-content: start;
   }
 
@@ -159,14 +160,14 @@
 
       &:hover,
       &:focus-visible {
-        color: hsla(214, 97%, 13%, 0.5);
+        color: $ff-color-hover;
       }
     }
   }
 
   &[href]:hover,
   &[href]:focus-visible {
-    color: hsla(210, 50%, 98%, 0.5);
+    color: $ff-colorlight-hover;
   }
 
   @include vp-1023 {
@@ -193,6 +194,12 @@
     top: 0;
     z-index: 100;
     width: 100%;
+    background-color: $color-transparent;
+  }
+}
+
+.page-header.is-js .page-header__wrapper-content {
+  @include vp-767 {
     background-color: $color-transparent;
   }
 }
@@ -241,8 +248,8 @@
 
     &:hover::after,
     &:focus-visible::after {
-      background-color: hsla(210, 50%, 98%, 0.5);
-      box-shadow: 0 5px 0 0 hsla(210, 50%, 98%, 0.5), 0 -5px 0 0 hsla(210, 50%, 98%, 0.5);
+      background-color: $ff-colorlight-hover;
+      box-shadow: 0 5px 0 0 $ff-colorlight-hover, 0 -5px 0 0 $ff-colorlight-hover;
     }
   }
 }
@@ -273,7 +280,7 @@
     &:focus-visible::after,
     &:hover::before,
     &:focus-visible::before {
-      background-color: hsla(214, 97%, 13%, 0.5);
+      background-color: $ff-color-hover;
       box-shadow: none;
     }
   }

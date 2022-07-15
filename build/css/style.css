@@ -676,6 +676,7 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+  background-color: #f9fbfd;
 }
 
 .page-header__logo {
@@ -2161,6 +2162,10 @@ button,
     top: 0;
     z-index: 100;
     width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .page-header.is-js .page-header__wrapper-content {
     background-color: rgba(255, 255, 255, 0);
   }
 

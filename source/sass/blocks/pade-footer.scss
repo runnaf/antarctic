@@ -115,7 +115,7 @@
 
   &:hover,
   &:focus-visible {
-    color: hsla(210, 50%, 98%, 0.5);
+    color: $ff-colorlight-hover;
   }
 
   @include vp-1023 {
@@ -129,7 +129,7 @@
 }
 
 .page-footer__link-menu-container.is-inactive a {
-  color: hsla(210, 50%, 98%, 0.3);
+  color: $ff-colorlight-disabled;
   cursor: default;
   pointer-events: none;
 
@@ -138,7 +138,7 @@
     cursor: default;
     pointer-events: none;
     outline: none;
-    color: hsla(210, 50%, 98%, 0.3);
+    color: $ff-colorlight-disabled;
   }
 }
 
@@ -209,13 +209,13 @@
 
 .page-footer__link-container a:hover svg,
 .page-footer__link-container a:focus-visible svg {
-  fill: hsla(210, 50%, 98%, 0.5);
+  fill: $ff-colorlight-hover;
 }
 
 .page-footer__link-container.is-inactive svg,
 .page-footer__link-container.is-inactive a:hover svg,
 .page-footer__link-container.is-inactive a:focus-visible svg {
-  fill: hsla(210, 50%, 98%, 0.3);
+  fill: $ff-colorlight-disabled;
   pointer-events: none;
   outline: none;
 }
@@ -226,7 +226,7 @@
   cursor: default;
   pointer-events: none;
   outline: none;
-  color: hsla(210, 50%, 98%, 0.3);
+  color: $ff-colorlight-disabled;
 }
 
 .page-footer__twitter svg {

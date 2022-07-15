@@ -261,19 +261,19 @@
 .reservation__checkbox-container input[type="checkbox"]:disabled + label {
   cursor: default;
   pointer-events: none;
-  color: hsla(210, 50%, 98%, 0.3);
+  color: $ff-colorlight-disabled;
 }
 
 .reservation__checkbox-container input[type="checkbox"]:disabled + label svg {
-  stroke: hsla(231, 69%, 20%, 0.3);
+  stroke: rgba(16, 26, 86, 0.3);
 }
 
 .reservation__checkbox-container input[type="checkbox"]:checked:hover + label svg {
-  stroke: hsla(231, 69%, 20%, 0.5);
+  stroke: rgba(16, 26, 86, 0.5);
 }
 
 .reservation__checkbox-container input[type="checkbox"]:hover + label {
-  color: hsla(210, 50%, 98%, 0.5);
+  color: $ff-colorlight-hover;
 }
 
 .reservation__checkbox-container input[type="checkbox"]:hover + label,
@@ -301,11 +301,11 @@
 
   &:hover,
   &:focus-visible {
-    color: hsla(214, 97%, 13%, 0.5);
+    color: $ff-color-hover;
   }
 
   &:disabled {
-    color: hsla(214, 97%, 13%, 0.3);
+    color: $ff-color-disabled;
     cursor: default;
     pointer-events: none;
   }
