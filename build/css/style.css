@@ -676,7 +676,6 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  background-color: #f9fbfd;
 }
 
 .page-header__logo {
@@ -2093,6 +2092,7 @@ button,
     margin: 0;
     margin-left: auto;
     padding: 11px 4.7% 20px;
+    background-color: #f9fbfd;
   }
 
   .page-header__logo {
