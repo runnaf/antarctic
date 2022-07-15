@@ -203,11 +203,19 @@
     display: none;
   }
 
+  &:last-child {
+    display: inline;
+  }
+
   @include vp-1023 {
     display: none;
 
     &:first-child {
       display: inline;
+    }
+
+    &:last-child {
+      display: none;
     }
   }
 

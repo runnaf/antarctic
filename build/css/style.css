@@ -973,6 +973,10 @@ button,
   display: none;
 }
 
+.advantages__boat br:last-child {
+  display: inline;
+}
+
 .upcoming-cruises {
   padding: 110px 118px 120px;
 }
@@ -1887,6 +1891,10 @@ button,
 
   .advantages__boat br:first-child {
     display: inline;
+  }
+
+  .advantages__boat br:last-child {
+    display: none;
   }
 
   .upcoming-cruises {
